@@ -1,0 +1,20 @@
+1) Cosa fa il programma?
+
+Il programma permette di creare un quiz a risposta multipla: A,B e C
+
+
+2) Cosa succede se l’utente inserisce una lettera diversa da A o B in fase di scelta iniziale? Il programma termina, ma non è una casistica che abbiamo gestito.
+
+Il programma termina, perchè non c'è un alternativa alle opzioni A e B nel codice.
+Si può aggiungere l'alternativa con una funzione else al primo if statement:
+
+else
+{
+	printf("Scelta non valida");
+	return 0;
+	}
+
+
+3) Cosa succede se l’utente inserisce un nome che ha più caratteri della dimensione dell’array «nome» che abbiamo dichiarato inizialmente nella fase di avvio nuova partita? Riceveremo un errore (provate ad inserire una sequenza molto lunga di caratteri). 
+
+Otteniamo un errore di buffer overflow, perchè il numero di caratteri da noi inseriti superano il numero massimo di quelli accettati dal programma.
