@@ -17,4 +17,4 @@ else
 
 3) Cosa succede se l’utente inserisce un nome che ha più caratteri della dimensione dell’array «nome» che abbiamo dichiarato inizialmente nella fase di avvio nuova partita? Riceveremo un errore (provate ad inserire una sequenza molto lunga di caratteri). 
 
-Otteniamo un errore di buffer overflow, perchè il numero di caratteri da noi inseriti superano il numero massimo di quelli accettati dal programma.
+Otteniamo un errore di buffer overflow, perchè il numero di caratteri da noi inseriti superano il numero massimo di quelli accettati dall'array.
